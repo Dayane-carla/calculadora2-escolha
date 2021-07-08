@@ -1,0 +1,51 @@
+Algoritmo "calculadora2-escolha"
+
+
+
+Var  num1,num2, operacao, soma, subtracao, divisao, multiplicacao, porcentagem:real
+
+
+
+Inicio
+       escreval("========================CALCULADORA===========================")
+       escreva ("Digite o primeiro número:")
+       leia (num1)
+       escreva ("Digite o segundo número:")
+       leia (num2)
+       escreval("--------------------------------------------------------------")
+         
+       escreval("[1] para a operação de: SOMA  ")
+       escreval("[2] para a operação de: SUBTRAÇÃO ")
+       escreval("[3] para a operação de: DIVISÃO ")
+       escreval("[4] para a operação de: MULTIPLICAÇÃO ")
+       escreval("[5] para a operação de: PORCENTAGEM ")
+
+       escreval ("--------------------------------------------------------------")
+
+       leia (operacao)
+
+         escolha(operacao)
+
+           caso 1
+             soma <- num1+num2
+             escreva ("Resultado:", soma:4:2)
+
+           caso 2
+             subtracao <- num1-num2
+             escreva ("Resultado:", subtracao:4:2)
+
+           caso 3
+             divisao <- num1/num2
+             escreva ("Resultado:", divisao:4:2)
+
+           caso 4
+             multiplicacao <- num1*num2
+             escreva ("Resultado:", multiplicacao:4:2)
+
+           caso 5
+             porcentagem <- num1*(num2/100)
+             escreva ("Resultado:", porcentagem:4:2)
+         
+         Fimescolha
+
+Fimalgoritmo
